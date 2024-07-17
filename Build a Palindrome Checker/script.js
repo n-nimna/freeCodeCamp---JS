@@ -1,3 +1,5 @@
+
+//js code
 document.getElementById('check-btn').addEventListener('click', function() {
     const inputText = document.getElementById('text-input').value;
     const resultElement = document.getElementById('result');
