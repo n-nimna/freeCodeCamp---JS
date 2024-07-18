@@ -1,3 +1,4 @@
+//js code
 document.getElementById('convert-btn').addEventListener('click', function() {
     const numberInput = document.getElementById('number').value;
     const output = document.getElementById('output');
