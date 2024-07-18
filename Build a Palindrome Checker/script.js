@@ -1,21 +1,38 @@
+const userInput = document.getElementById('text-input');
+const checkPalindromeBtn = document.getElementById('check-btn');
+const resultDiv = document.getElementById('result');
 
-//js code
-document.getElementById('check-btn').addEventListener('click', function() {
-    const inputText = document.getElementById('text-input').value;
-    const resultElement = document.getElementById('result');
-    const isPalindrome = checkPalindrome(inputText);
-    
-    if (isPalindrome) {
-        resultElement.textContent = `"${inputText}" is a palindrome.`;
-        resultElement.style.color = 'green';
-    } else {
-        resultElement.textContent = `"${inputText}" is not a palindrome.`;
-        resultElement.style.color = 'red';
+const checkPalindrome = (input) => {
+    const originalInput = input;
+
+    if (input === '') {
+        alert('Please input a value');
+        return;
     }
-});
 
-function checkPalindrome(text) {
-    const cleanedText = text.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-    const reversedText = cleanedText.split('').reverse().join('');
-    return cleanedText === reversedText;
+    resultDiv.replaceChildren();
+
+    const lowerCaseStr = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase(); // remove non alphanumeric characters
+    let resultMessage = `<strong>${originalInput}</strong> ${
+        lowerCaseStr === [...lowerCaseStr].reverse().join('') ? 'is' : 'is not'
+    } a palindrome`;
+
+    const pTag = document.createElement('p');
+    pTag.className = 'user-input';
+    pTag.innerHTML = resultMessage;
+    resultDiv.appendChild(pTag);
+
+    resultDiv.classList.remove('hidden'); 
 }
+
+userInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        checkPalindrome(userInput.value);
+        userInput.value = '';
+    }
+})
+
+checkPalindromeBtn.addEventListener('click', () => {
+    checkPalindrome(userInput.value);
+    userInput.value = '';
+});
