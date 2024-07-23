@@ -1,25 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a2e;
+    background-color: #f0f0f0;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 20px;
 }
 
 .container {
+    max-width: 600px;
+    margin: 0 auto;
     background-color: white;
-    border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    text-align: center;
 }
 
 .search-container {
@@ -29,17 +25,16 @@ h1 {
 
 #search-input {
     flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 #search-button {
-    background-color: #8e44ad;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 8px 15px;
-    border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
@@ -47,52 +42,26 @@ h1 {
     display: none;
 }
 
-#pokemon-name-id {
-    font-size: 24px;
-    margin-bottom: 10px;
+#types {
+    margin: 10px 0;
 }
 
-#weight-height {
-    margin-bottom: 10px;
+#types span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
 #sprite {
     display: block;
-    margin: 0 auto;
-    max-width: 100px;
+    margin: 20px auto;
+    max-width: 200px;
 }
 
-#types {
-    margin: 10px 0;
-    text-align: center;
-}
-
-.type-badge {
-    background-color: #f8a5c2;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 2px;
-}
-
-.stats-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 5px;
-}
-
-.stats-table th, .stats-table td {
-    background-color: #8e44ad;
-    color: white;
-    padding: 8px;
-    text-align: left;
-}
-
-.stats-table th:first-child, .stats-table td:first-child {
-    border-radius: 5px 0 0 5px;
-}
-
-.stats-table th:last-child, .stats-table td:last-child {
-    border-radius: 0 5px 5px 0;
+.stats {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
 }
