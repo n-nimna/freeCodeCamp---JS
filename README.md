@@ -15,4 +15,5 @@
 #Telephone Number Validator
 
 
-![Screenshot 2024-07-23 183406](https://github.com/user-attachments/assets/bcf8b5fa-b716-403f-a5a8-edf0ee2c7fed)
+
+![Screenshot 2024-07-23 184828](https://github.com/user-attachments/assets/14f00276-c4d4-419a-924b-05bd57b4adc6)
