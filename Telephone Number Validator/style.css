@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2b2b3d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.phone-frame {
+  background-color: #000;
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.phone-screen {
+  background-color: #657A8C;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#user-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+}
+
+#results-div {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.valid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.invalid {
+  background-color: #f8d7da;
+  color: #721c24;
+}
