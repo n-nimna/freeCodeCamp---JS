@@ -19,17 +19,21 @@ h1 {
 
 .phone-frame {
   background-color: #000;
-  width: 300px;
-  height: 500px;
-  border-radius: 30px;
+  width: 320px;
+  height: 640px;
+  border-radius: 40px;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone-screen {
-  background-color: #657A8C;
-  height: 100%;
-  border-radius: 20px;
+  background-color: #728b97;
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -39,15 +43,17 @@ h1 {
 
 label {
   margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 #user-input {
   width: 80%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: none;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 1em;
 }
 
 .button-container {
@@ -63,7 +69,7 @@ button {
   background-color: #333;
   color: #fff;
   cursor: pointer;
-  flex: 1;
+  font-size: 1em;
   margin: 0 5px;
 }
 
@@ -73,6 +79,7 @@ button {
   border-radius: 10px;
   width: 80%;
   text-align: center;
+  font-size: 1.2em;
 }
 
 .valid {
