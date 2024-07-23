@@ -17,3 +17,11 @@
 
 
 ![Screenshot 2024-07-23 184828](https://github.com/user-attachments/assets/14f00276-c4d4-419a-924b-05bd57b4adc6)
+
+
+#Build a Cash Register
+
+
+![Screenshot 2024-07-23 185331](https://github.com/user-attachments/assets/912dcaf8-b13e-40a2-8727-d8551b59c41d)
+
+
